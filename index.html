@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+    <title>BankistApp</title>
+  </head>
+  <body>
+    <main>
+      <div class="login_form">
+        <h2>Bankist App</h2>
+        <small class="small_form_text"
+          >This app only provides continuous training JavaScript and is made for
+          that purpose only.
+        </small>
+        <p class="login_form_text">Please Login:</p>
+        <form class="user_input_form">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input_form user_username"
+            placeholder="User"
+            maxlength="2"
+          />
+
+          <input
+            type="password"
+            name="pin"
+            id="pin"
+            class="input_form user_pin"
+            placeholder="Pin"
+            maxlength="4"
+          />
+
+          <button class="btn_submit_user">Submit</button>
+        </form>
+      </div>
+
+      <!-- Main part  -->
+      <div class="app">
+        <p>Welcome back, <h3 class="logged_user"></h3>.</p>
+        <div class="current_balance">
+          <div class="current_text">
+            <h4>Current balance</h4>
+            <p class="date_current_balance">As of 05/03/2037</p>
+          </div>
+          <div class="current_balance_money">
+            <h4 class="money_status">3840$</h4>
+          </div>
+        </div>
+
+        <div class="view_balance">
+          <div class="balance">
+          <div class="text_view_balance">
+            <div class="text">
+              <p>Deposit</p>
+              <p class="red"></p>
+            </div>
+          </div>
+        </div>
+
+          <div class="transering_movments">
+            <!-- Transfer money -->
+            <div class="transfer_money">
+              <h4>Transfer money:</h4>
+              <form class="transfer_form">
+                <input type="text" placeholder="Transfer to" class="transfer transfer_to" />
+                <input type="number" placeholder="Amount" class="transfer amount_to" />
+                <button class="btn btn_transfer_money">&#8594;</button>
+              </form>
+            </div>
+
+            <!-- Request loan -->
+            <div class="loan_money">
+              <h4>Request loan:</h4>
+              <form class="loan_form">
+                <input type="number" placeholder="Amount" class="loan_amount" />
+                <button class="btn_loan">&#8594;</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="acount_infos">
+          <p class="deposit_money green">plus</p>
+          <p class="widraw_money red">minus</p>
+          <button class="btn_sort">Sort</button>
+          <p class="percentage_money">sve ukupno sa %</p>
+    
+        </div>
+        <div class="btn_wraper">
+          <button class="btn_logout">Logout</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

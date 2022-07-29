@@ -1,0 +1,345 @@
+body {
+  font-family: "Saira", sans-serif;
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.login_form {
+  border: 1px solid white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 2em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+form {
+  display: block;
+}
+
+.input_form {
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  border: #f2f2f2;
+  font-size: 0.5em;
+  padding: 1em;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.btn_submit_user {
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  border: #f2f2f2;
+  font-size: 0.5em;
+  padding: 1em;
+  border-radius: 10px;
+  width: 50%;
+  background-color: #4d94ff;
+  color: white;
+  transition: 0.5s ease-in-out;
+  font-weight: 500;
+  margin: 1em;
+}
+
+.btn_submit_user:hover {
+  transform: scale(1.05);
+}
+
+.app {
+  /* This is fade in/out anumation */
+  opacity: 0;
+  transition: all 1s;
+}
+
+.login_form {
+  display: block;
+  transition: all 1s;
+}
+
+.current_balance {
+  text-align: center;
+  line-height: 0;
+  font-size: xx-large;
+  display: flex;
+}
+
+.current_balance_money {
+  font-weight: 600;
+  margin: auto;
+}
+
+.money_status {
+  font-size: xxx-large;
+}
+
+.date_current_balance {
+  font-size: small;
+  text-align: left;
+  line-height: 0;
+}
+
+.view_balance {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.balance {
+  display: block;
+}
+
+.text_view_balance {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: block;
+  padding: 0.5em;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  max-height: 330px;
+  overflow-y: scroll;
+}
+
+.text {
+  display: block;
+  border-bottom: 1px solid #f2f2f2;
+  font-weight: 500;
+  font-size: large;
+  width: 50em;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+/* .transering_movments {
+} */
+
+/* Transfer money */
+.transfer_money {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: block;
+  border: 1px solid #f2f2f2;
+  padding: 0.4em;
+  border-radius: 10px;
+  background: rgb(247, 255, 0);
+  background: linear-gradient(
+    201deg,
+    rgba(247, 255, 0, 1) 0%,
+    rgba(252, 150, 69, 1) 100%
+  );
+  color: white;
+  margin: 0.5em 0;
+}
+
+.transfer_form {
+  display: flex;
+  gap: 0.2em;
+}
+
+.transfer {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.1em;
+  font-family: "Saira", sans-serif;
+  opacity: 0.8;
+  width: 7em;
+}
+
+.btn {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.5em;
+}
+
+/* Loan money */
+.loan_money {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: block;
+  border: 1px solid #f2f2f2;
+  padding: 0.4em;
+  border-radius: 10px;
+  background: rgb(1, 121, 38);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 121, 38, 1) 35%,
+    rgba(39, 215, 37, 1) 86%
+  );
+  color: white;
+  margin: 0.5em 0;
+}
+
+.loan_form {
+  display: flex;
+  gap: 0.2em;
+}
+
+.loan_amount {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.1em;
+  font-family: "Saira", sans-serif;
+  width: 7em;
+  opacity: 0.8;
+}
+
+.btn_loan {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.5em;
+}
+
+.btn_logout {
+  float: right;
+  padding: 1em 4em;
+  margin: 1em 6em;
+  color: lightyellow;
+  border: 1px solid lightyellow;
+  font-family: "Saira", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: rgb(215, 37, 45);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 37, 45, 1) 0%,
+    rgba(121, 1, 4, 1) 51%
+  );
+}
+
+.acount_infos {
+  display: flex;
+  gap: 5%;
+  padding: 0.5em;
+  margin: 1em;
+  align-items: center;
+  font-weight: 700;
+}
+
+.btn_sort {
+  color: white;
+  border: 1px solid #f2f2f2;
+  background: rgb(215, 37, 45);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 37, 45, 1) 0%,
+    rgba(121, 1, 4, 1) 51%
+  );
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+/* MEDIA SCREEN */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+
+  .login_form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .input_form {
+    width: 80%;
+  }
+
+  .app {
+    /* This is fade in/out anumation */
+    opacity: 0;
+    transition: all 1s;
+    display: block;
+  }
+
+  .current_balance {
+    text-align: left;
+    font-size: medium;
+    display: block;
+    padding-left: 0.5em;
+  }
+
+  .current_balance_money {
+    font-weight: 500;
+    margin: auto;
+  }
+
+  .money_status {
+    font-size: x-large;
+  }
+
+  .date_current_balance {
+    font-size: small;
+    text-align: left;
+    line-height: 0;
+  }
+
+  .view_balance {
+    display: block;
+    width: 90%;
+    align-items: left;
+    gap: 0;
+  }
+
+  .text_view_balance {
+    width: 95%;
+    padding: 0.5em;
+  }
+
+  .text {
+    gap: 55%;
+  }
+
+  /* .transering_movments {
+  } */
+
+  /* Transfer money */
+  .transfer_money {
+    padding: 1em;
+  }
+
+  .transfer_form {
+    gap: 0.5em;
+  }
+
+  .transfer {
+    width: 10em;
+  }
+
+  /* Loan money */
+  .loan_money {
+    padding: 1em;
+  }
+
+  .loan_form {
+    gap: 0.5em;
+  }
+
+  .loan_amount {
+    width: 10em;
+  }
+}
